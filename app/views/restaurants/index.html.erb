@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <h1>Yelp Food</h1>
+    <%= link_to new_restaurant_path do %>
+      <h3> New Restaurant </h3>
+    <% end %>
+  </div>
+  <div class="cards">
+    <% @restaurants.each do |r| %>
+      <%= render 'restaurants/card', restaurant: r %>
+    <% end %>
+  </div>
+</div>

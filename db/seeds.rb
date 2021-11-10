@@ -13,7 +13,7 @@ puts 'HAL is fabricating new restaurants...'
   Restaurant.create!(
     name: Faker::Games::Zelda.location,
     address: Faker::Games::StreetFighter.stage,
-    category: Restaurant::CATEGORY.sample,
+    category: Restaurant::CATEGORY.sample
   )
 end
 puts 'HAL creation executed. Your new restaurants are ready, sir.'
